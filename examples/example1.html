@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <title>jquery.domsearch example</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css" media="all" />	
+	    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+	    <script type="text/javascript" src="../jquery.domsearch.js"></script>	 
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#search-field').domsearch({
+                    searchIn: '.content-item',
+                    highlight: true
+                });
+            });
+        </script>	       
+    </head>
+    <body class="main">
+        <div id="layout">      
+            <div class="code">      
+            <h2>jQuery.domsearch plugin example</h2>
+            <h4>JavaScript:</h4>
+            <pre>
+$(document).ready(function () {
+    $('#search-field').domsearch({
+        searchIn: '.content-item',
+        highlight: true
+    });
+});
+            </pre>
+            <h4>CSS:</h4>
+            <pre>
+.highlight {
+    font-weight:bold;
+    background-color:#DDDDDD;
+}
+            </pre>     
+            </div>                 
+            <div id="content-controls">
+                <form>
+                    <label>Search:</label> <input type="text" name="search-field" id="search-field" /> &lt;- start typing a search keyword            
+                </form>
+            </div>
+        </div>        
+        <h2>Example News Feed</h2>
+        <div id="content">
+            <div class="content-item">
+            	<div class="item-title"><a href="">Lorem ipsum dolor sit amet</a></div>
+            	<div class="item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec dolor ut purus dapibus consectetur. Nulla ac congue purus. Nullam tempor tempor odio sit amet posuere. Vivamus mollis elementum metus, facilisis posuere ipsum dignissim sit amet. Nulla est dolor, convallis ut tincidunt a, consequat at lacus. Suspendisse porttitor dapibus mi et aliquam. Nam vitae pulvinar nunc. 
+            	</div>
+            </div>      
+            <div class="content-item">
+            	<div class="item-title"><a href="">Aliquam ultrices, lorem at convallis faucibus</a></div>
+            	<div class="item-text">Aliquam ultrices, lorem at convallis faucibus, magna tortor pellentesque nibh, ut rhoncus eros mauris ac leo. Nam commodo, dui eget dapibus accumsan, lorem ipsum dictum justo, quis varius tortor metus gravida dolor. Mauris condimentum euismod lacus, at scelerisque sapien accumsan non. Pellentesque accumsan euismod odio a ultrices. Mauris consectetur pulvinar nisl nec pellentesque. Proin eget magna libero, vel congue metus. Vestibulum ut eros felis, egestas consectetur ipsum. Cras ac lacus a risus gravida tincidunt at sed erat. 
+            	</div>
+            </div>      
+            <div class="content-item">
+            	<div class="item-title"><a href="">Nullam tellus elit, eleifend non luctus</a></div>
+            	<div class="item-text">Nullam tellus elit, eleifend non luctus et, mattis eu lacus. Nunc vel ligula nulla, eu dapibus neque. Duis condimentum nulla eget mi dictum vehicula vitae vel tellus. Sed ac interdum sem. Nulla mollis convallis orci molestie sollicitudin. Aenean tincidunt sapien convallis felis volutpat tincidunt ac a justo. Nam ante nulla, placerat non vulputate nec, sollicitudin quis magna. 
+            	</div>
+            </div>   
+            <div class="content-item">
+            	<div class="item-title"><a href="">Phasellus faucibus elementum leo</a></div>
+            	<div class="item-text">Phasellus faucibus elementum leo, quis ornare nibh sagittis vitae. Sed a odio magna, eu suscipit augue. Ut posuere, dui ut rhoncus ullamcorper, risus ligula ultrices dolor, et aliquet eros dui in purus. Sed velit ipsum, rutrum et interdum eget, vestibulum et erat. Morbi nec ipsum massa, nec commodo nisi. Maecenas quis lorem non eros tincidunt pharetra. Maecenas et massa diam, varius venenatis ligula. Maecenas luctus, tellus sed posuere lobortis, leo mauris ullamcorper leo, sed mattis tellus tortor vitae mauris. 
+            	</div>
+            </div>     
+            <div class="content-item">
+            	<div class="item-title"><a href="">Donec vel mi turpis, at rhoncus neque</a></div>
+            	<div class="item-text">Donec vel mi turpis, at rhoncus neque. Nullam dignissim dictum feugiat. Pellentesque congue, mi id rutrum vestibulum, augue justo rutrum augue, nec blandit lacus nisl eu velit. Nullam placerat blandit magna at venenatis. Suspendisse suscipit dui magna. Aliquam hendrerit adipiscing nisi quis congue. Maecenas eu dictum diam. In id odio eu neque malesuada rutrum. Cras elit elit, fermentum id congue vel, dignissim sed lorem. Quisque condimentum, lorem sed auctor convallis, lectus tortor ultrices purus, eu porta massa libero sed ipsum. 
+            	</div>
+            </div>                                                    
+        </div>     
+    </body>
+</html>            

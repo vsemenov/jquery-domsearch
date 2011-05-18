@@ -1,0 +1,11 @@
+/*
+ * jQuery DOM search & filter plugin with highlighting
+ * @version 0.4.1
+ * @requires jQuery 1.3
+ * @author vsemenov
+ *
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/mit-license.php
+ *
+ * @example $('#search-field').domsearch({filter: '.content-item', highlight: true});
+ */
