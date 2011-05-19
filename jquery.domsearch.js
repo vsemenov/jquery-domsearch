@@ -8,6 +8,7 @@
  * http://www.opensource.org/licenses/mit-license.php
  *
  * @example $('#search-field').domsearch({filter: '.content-item', highlight: true});
+ *          http://vsemenov.com/examples/jquery-domsearch/
  */
 ;(function($) {
 	/**
